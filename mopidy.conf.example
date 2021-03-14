@@ -1,0 +1,105 @@
+#
+# mopidy.conf.example
+# MopidyForNAS
+#
+# Created by CbS Ghost on 03/14/2021.
+# Copyright (c) 2021 CbS Ghost. Released under MIT license.
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+[core]
+cache_dir = /mopidy/core/cache
+config_dir = /mopidy/core/config
+data_dir = /mopidy/core/data
+restore_state = true
+
+[logging]
+verbosity = 0
+
+[loglevels]
+root = WARNING
+mopidy = WARNING
+mopidy_iris = WARNING
+mopidy_spotify = WARNING
+mopidy_youtube = WARNING
+mopidy_ytmusic = WARNING
+
+[audio]
+output = alsasink
+
+[mpd]
+enabled = false
+hostname = 0.0.0.0
+
+[http]
+enabled = true
+hostname = 0.0.0.0
+port = 6680
+zeroconf = Mopidy @ Living Room
+allowed_origins =
+csrf_protection = true
+default_app = iris
+
+[iris]
+enabled = true
+country = TW
+locale = zh_TW
+
+[moped]
+enabled = false
+
+[file]
+enabled = true
+media_dirs = /mopidy/media/music
+
+[local]
+enabled = true
+media_dir = /mopidy/media/music
+
+[m3u]
+enabled = true
+playlists_dir = /mopidy/media/playlists
+
+[gmusic]
+enabled = false
+refresh_token = 
+deviceid = 
+
+[pandora]
+enabled = false
+
+[soundcloud]
+enabled = false
+
+[spotify]
+enabled = false
+username =
+password =
+client_id =
+client_secret =
+
+[tunein]
+enabled = false
+
+[youtube]
+enabled = true
+
+[ytmusic]
+enabled = false
+
