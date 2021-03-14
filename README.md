@@ -30,6 +30,7 @@ cd MopidyForNAS
 Alternatively, you can download them to a single zip bundle if `git` isn't available in the NAS.
 ```
 wget https://github.com/cbsghost/MopidyForNAS/archive/master.zip
+unzip master.zip
 cd MopidyForNAS-master
 ```
 
