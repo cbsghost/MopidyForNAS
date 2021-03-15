@@ -63,7 +63,7 @@ def SetupAudioDevice():
 				"Press 't' to test audio output\n"
 				"Press 'Enter' to confirm")
 	devicePicker = Picker(availableDeviceList, devicePickerTitle,
-					indicator='-->', default_index=devicePickerDefaultIndex)
+				indicator='-->', default_index=devicePickerDefaultIndex)
 	devicePicker.register_custom_handler(ord("t"),  PlayTestingAudio)
 	devicePickerOption, devicePickerIndex = devicePicker.start()
 	configData["audio"]["output"] = "alsasink device=\"%s\"" % availableDeviceList[devicePickerIndex]
