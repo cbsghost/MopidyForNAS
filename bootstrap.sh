@@ -34,11 +34,13 @@ echo ""
 
 echo "Creating Docker volume: 'mopidy-media' ..."
 docker volume create mopidy-media
+mkdir "$(docker volume inspect --format "{{.Mountpoint}}" mopidy-media)/Music"
+mkdir "$(docker volume inspect --format "{{.Mountpoint}}" mopidy-media)/Playlists"
 echo "done."
 echo ""
 
 echo "Creating symlink for 'mopidy-media' ..."
-ln -s "`docker volume inspect --format "{{.Mountpoint}}" mopidy-data`" \
+ln -s "$(docker volume inspect --format "{{.Mountpoint}}" mopidy-media)" \
 	"Mopidy-Media"
 echo "done."
 echo ""
