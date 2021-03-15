@@ -51,7 +51,7 @@ hostname = 0.0.0.0
 enabled = true
 hostname = 0.0.0.0
 port = 6680
-zeroconf = Mopidy @ Living Room
+zeroconf = Mopidy @ NAS
 allowed_origins =
 csrf_protection = true
 default_app = iris
@@ -66,15 +66,15 @@ enabled = false
 
 [file]
 enabled = true
-media_dirs = /mopidy/media/music
+media_dirs = /mopidy/media/Music
 
 [local]
 enabled = true
-media_dir = /mopidy/media/music
+media_dir = /mopidy/media/Music
 
 [m3u]
 enabled = true
-playlists_dir = /mopidy/media/playlists
+playlists_dir = /mopidy/media/Playlists
 
 [gmusic]
 enabled = false
